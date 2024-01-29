@@ -101,7 +101,7 @@ When the event was logged
 Name of the event.
 {% enddocs %}
 
-{% docs event_id %}
+{% docs bingeflix_column_event_id %}
 Unique identifier of the event.
 {% enddocs %}
 

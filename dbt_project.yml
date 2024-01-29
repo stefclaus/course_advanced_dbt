@@ -46,6 +46,7 @@ models:
 
 seeds:
   dbt_project_evaluator:
+    models_fanout_threshold: 5
     dbt_project_evaluator_exceptions:
       +enabled: false
 
