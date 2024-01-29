@@ -27,6 +27,8 @@ models:
     
     staging:
       +schema: staging
+      +docs:
+        node_color: "#023020"
     
     intermediate:
       +schema: intermediate
@@ -34,14 +36,17 @@ models:
     marts:
       core:
         +schema: core_reporting
+        +docs:
+          node_color: "green"
       finance:
         +schema: finance
       product:
         +schema: product
+      
 
 seeds:
   dbt_project_evaluator:
     dbt_project_evaluator_exceptions:
       +enabled: false
 
-# on-run-end: "{{ dbt_project_evaluator.print_dbt_project_evaluator_issues() }}"
+on-run-end: "{{ dbt_project_evaluator.print_dbt_project_evaluator_issues() }}"
